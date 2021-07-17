@@ -43,8 +43,8 @@
   }
 
   .items-list li {
-    width: 23.375rem;
-    height: 18.875rem;
+    width: 300px;
+    height: 302px;
     background: var(--bgCard);
   }
 }
