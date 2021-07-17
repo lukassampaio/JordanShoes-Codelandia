@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Desafio 2 - Codelandia</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="info">
+        <div class="info-p">
+          <p>Ganhe R$ 10,00 no desconto do frete</p>
+        </div>
+        <div class="info-a">
+          <a href="#">Jordan Shoes</a>
+        </div>
+      </div>
+    </header>
+    <!-- Section -->
+    <section class="section">
+      <div class="title">
+        <h1>A melhor loja de Jordan</h1>
+      </div>
+      <div class="description">
+        <p id="typed">
+          O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o
+          jogador Michael Jordan.
+        </p>
+      </div>
+    </section>
+    <!-- main -->
+    <main class="main">
+      <div class="title-desc-main">
+        <h1>Destaques</h1>
+        <p>
+          Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.
+        </p>
+      </div>
+      <section>
+        <div class="items">
+          <ul class="items-list">
+            <li>
+              <img src="assets/img/1.png" alt="" />
+            </li>
+            <li><img src="assets/img/2.png" alt="" /></li>
+            <li><img src="assets/img/3.png" alt="" /></li>
+            <li><img src="assets/img/4.png" alt="" /></li>
+            <li><img src="assets/img/5.png" alt="" /></li>
+            <li><img src="assets/img/6.png" alt="" /></li>
+            <li><img src="assets/img/7.png" alt="" /></li>
+            <li><img src="assets/img/8.png" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer-bg">
+        <p>Todos os direitos reservados.</p>
+      </footer>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
+
+    <!-- Animação do Scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        reset: true,
+      });
+
+      ScrollReveal().reveal(".items-list", { delay: 200 });
+    </script>
+  </body>
+</html>

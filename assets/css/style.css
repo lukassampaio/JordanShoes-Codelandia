@@ -1,0 +1,201 @@
+/* Fonte */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+/* Variáveis */
+
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+
+/* Geral */
+
+/* 1240px */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.info-p {
+  background: var(--title);
+}
+
+.info-p p {
+  color: var(--bgSite);
+  padding: 0.9375rem 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.info-a {
+  background: var(--bgSite);
+}
+
+.info-a a {
+  display: block;
+  color: var(--title);
+  padding: 0.625rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Section */
+
+.section {
+  background-image: url("/assets/img/wallpaper4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  height: 23.625rem;
+}
+
+.title {
+  max-width: 31.25rem;
+  margin: 8.125rem 0 1.25rem 6.25rem;
+}
+
+.title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.438rem;
+  color: var(--bgSite);
+}
+
+.description {
+  max-width: 28.75rem;
+  margin-left: 6.25rem;
+}
+
+.description p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 2.1875rem;
+  color: var(--bgSite);
+}
+
+/* Main */
+
+.main {
+  background: var(--bgSite);
+}
+
+.title-desc-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 77.5rem;
+  margin: 0 auto 3.75rem;
+}
+
+.title-desc-main h1 {
+  font-weight: 600;
+  line-height: 3.924rem;
+  color: var(--title);
+  margin-top: 3.75rem;
+}
+
+.title-desc-main p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 2.207rem;
+  color: var(--text);
+}
+
+/* Section-Main */
+
+.items-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 77.5rem;
+  margin: 0 auto 6.25rem;
+  gap: 0.9375rem;
+}
+
+.items-list li {
+  width: 17.5rem;
+  height: 18.875rem;
+  border-radius: 8px;
+  background: var(--bgCard);
+  transition: all 0.3s ease;
+}
+
+.items-list li:hover {
+  transform: scale(1.02);
+}
+
+.items-list li img {
+  width: 250px;
+  height: 150px;
+  margin: 4.6875rem auto;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer-bg {
+  background: var(--title);
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.footer-bg p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.87rem 0;
+  color: var(--bgSite);
+}
+
+/* Barra de rolagem */
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--title);
+  border-radius: 5px;
+}
